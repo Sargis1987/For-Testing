@@ -1,0 +1,445 @@
+{
+	"id": "88777318-786a-4620-ab97-5c8c6440e530",
+	"name": "Booking ",
+	"timestamp": "2020-05-17T12:19:34.174Z",
+	"collection_id": "5fa7afd0-ea98-4628-80f9-93226e60c3b4",
+	"folder_id": 0,
+	"environment_id": "a8552463-9ddb-46df-aa43-08764ca7aa2f",
+	"totalPass": 30,
+	"totalFail": 10,
+	"results": [
+		{
+			"id": "043afc08-e55f-48b7-813e-58d0b297229a",
+			"name": "Create Token",
+			"time": 154,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": true,
+				"Response contains token": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response contains token": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				156,
+				158,
+				156,
+				155,
+				154
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": true,
+					"Response contains token": true
+				},
+				{
+					"Status code is 200": true,
+					"Your test name": true,
+					"Response contains token": true
+				},
+				{
+					"Status code is 200": true,
+					"Your test name": true,
+					"Response contains token": true
+				},
+				{
+					"Status code is 200": true,
+					"Your test name": true,
+					"Response contains token": true
+				},
+				{
+					"Status code is 200": true,
+					"Your test name": true,
+					"Response contains token": true
+				}
+			]
+		},
+		{
+			"id": "0bbff2e0-bbaa-4c8d-b957-c835a5234c11",
+			"name": "GetBookingIds whole",
+			"time": 154,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				159,
+				160,
+				155,
+				155,
+				154
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "0efd7fea-3c78-458b-9e94-a433ed557606",
+			"name": "All Id's filterd by name",
+			"time": 154,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check Firstname undefined": true,
+				"Check Lastname undefined": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Check Firstname undefined": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Check Lastname undefined": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				155,
+				162,
+				154,
+				154,
+				154
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check Firstname undefined": true,
+					"Check Lastname undefined": true
+				},
+				{
+					"Status code is 200": true,
+					"Check Firstname undefined": true,
+					"Check Lastname undefined": true
+				},
+				{
+					"Status code is 200": true,
+					"Check Firstname undefined": true,
+					"Check Lastname undefined": true
+				},
+				{
+					"Status code is 200": true,
+					"Check Firstname undefined": true,
+					"Check Lastname undefined": true
+				},
+				{
+					"Status code is 200": true,
+					"Check Firstname undefined": true,
+					"Check Lastname undefined": true
+				}
+			]
+		},
+		{
+			"id": "5de9811e-d816-46dd-bcc4-14b83e95cfb1",
+			"name": "Booking id's filterd by date",
+			"time": 154,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				157,
+				155,
+				155,
+				155,
+				154
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "9dc70091-f6bc-4297-a859-c77bb9ab45b6",
+			"name": "Booking by exact id",
+			"time": 154,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				157,
+				161,
+				154,
+				156,
+				154
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "ab1febb1-5334-4ee1-9e53-fb95044b2e5a",
+			"name": "Create Booking",
+			"time": 155,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is Created": false
+			},
+			"testPassFailCounts": {
+				"Status code is Created": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				155,
+				155,
+				154,
+				156,
+				155
+			],
+			"allTests": [
+				{
+					"Status code is Created": false
+				},
+				{
+					"Status code is Created": false
+				},
+				{
+					"Status code is Created": false
+				},
+				{
+					"Status code is Created": false
+				},
+				{
+					"Status code is Created": false
+				}
+			]
+		},
+		{
+			"id": "2b90e6e7-1f62-4ef7-a8b1-92cfa6d1ff1f",
+			"name": "UpdateBooking",
+			"time": 155,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				154,
+				157,
+				155,
+				164,
+				155
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "1b61c7d9-4741-40c4-af1b-d5f0c54e87d4",
+			"name": "Booking update with few info",
+			"time": 155,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				158,
+				156,
+				157,
+				157,
+				155
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "c608f928-1737-4bc9-866c-138ebb72b5b9",
+			"name": "Delete Booking using AUTH",
+			"time": 157,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed"
+			},
+			"tests": {
+				"Status code is Succes": false
+			},
+			"testPassFailCounts": {
+				"Status code is Succes": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				155,
+				155,
+				153,
+				154,
+				157
+			],
+			"allTests": [
+				{
+					"Status code is Succes": false
+				},
+				{
+					"Status code is Succes": false
+				},
+				{
+					"Status code is Succes": false
+				},
+				{
+					"Status code is Succes": false
+				},
+				{
+					"Status code is Succes": false
+				}
+			]
+		},
+		{
+			"id": "9bd73177-4cd9-4349-85d2-6c850e7641d5",
+			"name": "Delete Booking using Cookie",
+			"time": 153,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				156,
+				154,
+				160,
+				154,
+				153
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "6dbbfe9e-7fd8-4101-83de-65ccf762260a",
+			"name": "PING",
+			"time": 153,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				155,
+				155,
+				155,
+				154,
+				153
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 5,
+	"totalTime": 8565,
+	"collection": {
+		"requests": [
+			{
+				"id": "043afc08-e55f-48b7-813e-58d0b297229a",
+				"method": "POST"
+			},
+			{
+				"id": "0bbff2e0-bbaa-4c8d-b957-c835a5234c11",
+				"method": "GET"
+			},
+			{
+				"id": "0efd7fea-3c78-458b-9e94-a433ed557606",
+				"method": "GET"
+			},
+			{
+				"id": "5de9811e-d816-46dd-bcc4-14b83e95cfb1",
+				"method": "GET"
+			},
+			{
+				"id": "9dc70091-f6bc-4297-a859-c77bb9ab45b6",
+				"method": "GET"
+			},
+			{
+				"id": "ab1febb1-5334-4ee1-9e53-fb95044b2e5a",
+				"method": "POST"
+			},
+			{
+				"id": "2b90e6e7-1f62-4ef7-a8b1-92cfa6d1ff1f",
+				"method": "PUT"
+			},
+			{
+				"id": "1b61c7d9-4741-40c4-af1b-d5f0c54e87d4",
+				"method": "PATCH"
+			},
+			{
+				"id": "c608f928-1737-4bc9-866c-138ebb72b5b9",
+				"method": "DELETE"
+			},
+			{
+				"id": "9bd73177-4cd9-4349-85d2-6c850e7641d5",
+				"method": "DELETE"
+			},
+			{
+				"id": "6dbbfe9e-7fd8-4101-83de-65ccf762260a",
+				"method": "GET"
+			}
+		]
+	}
+}

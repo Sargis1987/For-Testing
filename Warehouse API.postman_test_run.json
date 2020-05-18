@@ -1,0 +1,356 @@
+{
+	"id": "26e4d6d4-e7a2-43bf-866b-f1234d384a02",
+	"name": "Warehouse API",
+	"timestamp": "2020-05-02T18:27:26.688Z",
+	"collection_id": "5a28f716-a69c-4b28-b011-189ccbd89dd5",
+	"folder_id": "ca9cfee9-9d27-45e7-865d-5848619d35a8",
+	"environment_id": "b567b975-a2b0-4192-bc06-21b1511b77a6",
+	"totalPass": 8,
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "f1417d33-fdb4-48da-90aa-68ff12f62894",
+			"name": "/api/Bouquet/useMaterials",
+			"url": "https://qs1-warehouse-api.azurewebsites.net//api/Bouquet/useMaterials",
+			"time": 501,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				501
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "086619a6-fea4-4740-a6e4-b5d4890c3cbe",
+			"name": "/api/Bouquet/list",
+			"url": "https://qs1-warehouse-api.azurewebsites.net//api/Bouquet/list",
+			"time": 192,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				192
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "3407ce81-27c1-437d-b047-240052a83931",
+			"name": "/api/Bouquet/listProductions",
+			"url": "https://qs1-warehouse-api.azurewebsites.net//api/Bouquet/listProductions?dateFrom=2019-05-04&dateTo=2020-05-02",
+			"time": 213,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				213
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "84d6c3a8-7e2b-4455-8720-52db2ced1608",
+			"name": "/api/Bouquet/saveBouquet",
+			"url": "https://qs1-warehouse-api.azurewebsites.net//api/Bouquet/saveBouquet",
+			"time": 165,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				165
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "922d647e-30f1-44d7-8e82-f9566546e142",
+			"name": "/api/Bouquet/produceBouquet",
+			"url": "https://qs1-warehouse-api.azurewebsites.net//api/Bouquet/produceBouquet",
+			"time": 358,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				358
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "bb3153e0-05b2-4a00-9b0e-c0499c0c8f3b",
+			"name": "/api/Bouquet/sell",
+			"url": "https://qs1-warehouse-api.azurewebsites.net//api/Bouquet/sell",
+			"time": 259,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				259
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "0c53af0a-af44-447e-85cc-c3554d2c8d10",
+			"name": "/api/Bouquet/removeProduction",
+			"url": "https://qs1-warehouse-api.azurewebsites.net//api/Bouquet/removeProduction?productionId=<string>",
+			"time": 148,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 500, cause only Admin can remove": false
+			},
+			"testPassFailCounts": {
+				"Status code is 500, cause only Admin can remove": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				148
+			],
+			"allTests": [
+				{
+					"Status code is 500, cause only Admin can remove": false
+				}
+			]
+		},
+		{
+			"id": "437aa0f1-7fed-4626-b4ee-8a4c254c54e1",
+			"name": "/api/Bouquet/calculateProduction",
+			"url": "https://qs1-warehouse-api.azurewebsites.net//api/Bouquet/calculateProduction",
+			"time": 209,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				209
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2899fda1-5937-4469-9bc4-7d7f34416da3",
+			"name": "/api/Bouquet/copyBouquet",
+			"url": "https://qs1-warehouse-api.azurewebsites.net//api/Bouquet/copyBouquet?bouquetId=Kakao1&newName=Kakao10",
+			"time": 173,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				173
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "2e641452-0a05-49f5-91f4-2b12b80400b6",
+			"name": "/api/Bouquet/bouquet",
+			"url": "https://qs1-warehouse-api.azurewebsites.net//api/Bouquet/bouquet?id=Kakao",
+			"time": 154,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				154
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "85c7d51f-7184-494f-9da5-8b2a010ca047",
+			"name": "/api/Bouquet/getBiobacProductions",
+			"url": "https://qs1-warehouse-api.azurewebsites.net//api/Bouquet/getBiobacProductions?from=2019-05-04&to=2020-05-02",
+			"time": 127414,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				127414
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 129786,
+	"collection": {
+		"requests": [
+			{
+				"id": "f1417d33-fdb4-48da-90aa-68ff12f62894",
+				"method": "GET"
+			},
+			{
+				"id": "086619a6-fea4-4740-a6e4-b5d4890c3cbe",
+				"method": "GET"
+			},
+			{
+				"id": "3407ce81-27c1-437d-b047-240052a83931",
+				"method": "GET"
+			},
+			{
+				"id": "84d6c3a8-7e2b-4455-8720-52db2ced1608",
+				"method": "POST"
+			},
+			{
+				"id": "922d647e-30f1-44d7-8e82-f9566546e142",
+				"method": "POST"
+			},
+			{
+				"id": "bb3153e0-05b2-4a00-9b0e-c0499c0c8f3b",
+				"method": "POST"
+			},
+			{
+				"id": "0c53af0a-af44-447e-85cc-c3554d2c8d10",
+				"method": "GET"
+			},
+			{
+				"id": "437aa0f1-7fed-4626-b4ee-8a4c254c54e1",
+				"method": "POST"
+			},
+			{
+				"id": "2899fda1-5937-4469-9bc4-7d7f34416da3",
+				"method": "POST"
+			},
+			{
+				"id": "2e641452-0a05-49f5-91f4-2b12b80400b6",
+				"method": "GET"
+			},
+			{
+				"id": "85c7d51f-7184-494f-9da5-8b2a010ca047",
+				"method": "GET"
+			}
+		]
+	}
+}
